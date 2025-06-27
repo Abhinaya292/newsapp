@@ -4,7 +4,7 @@ import NewsList from '../components/NewsList'
 const Home = () => {
   return (
     <div>
-        {/* <NewsList/> */}
+        <NewsList/>
       
     </div>
   )

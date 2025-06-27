@@ -2,10 +2,11 @@ import React from 'react'
 import { useEffect,useState } from 'react';
 import NewsCard from './NewsCard';
 
-let API_KEY = 'db2fea66d8353b43da34a03813e5aa95';
+let API_KEY = import.meta.env.VITE_API_KEY;
 let url = `https://gnews.io/api/v4/search?q=example&apikey=${API_KEY}`;
 
 
+import.meta.env.VITE_API_KEY
 
 const NewsList = () => {
     let [news,setNews] = useState([]);
